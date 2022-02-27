@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<body>
+	<ol>
+		<li>hi</li>
+		<li>hi</li>
+		<li>hi</li>
+		<li>hi</li>
+		<li>hi</li>
+
+		
+	</ol>
+<script type="text/javascript">
+  let o=document.querySelector("ol")
+
+o.addEventListener('click',(e)=> 
+{
+	let x=Math.round(Math.random()*256);
+	let y=Math.round(Math.random()*256);
+	let z=Math.round(Math.random()*256);
+	e.target.style.color=`rgb(${x},${y},${z})`;
+});
+
+	
+		
+</script>
+</body>
+</html>
